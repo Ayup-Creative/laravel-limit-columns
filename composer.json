@@ -1,0 +1,12 @@
+{
+    "name": "ayup-creative/laravel-limit-columns",
+    "description": "'Automatic' distinct column selection for Laravel's Eloquent ORM",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AyupCreative\\LaravelLimitColumns\\": "src/"
+        }
+    },
+    "require": {}
+}
