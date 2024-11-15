@@ -1,6 +1,6 @@
 <?php
 
-namespace Ayup\LaravelLimitColumns\src;
+namespace Ayup\LaravelLimitColumns;
 
 trait LimitColumns
 {
