@@ -18,7 +18,7 @@ To make use of the package, include the ```Ayup\LaravelLimitColumns\LimitColumns
 
 ```php
 
-use Ayup\LaravelLimitColumns\src\LimitColumns;
+use Ayup\LaravelLimitColumns\LimitColumns;
 
 class MyModel extends Model
 {
