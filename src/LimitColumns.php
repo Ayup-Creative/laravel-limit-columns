@@ -36,6 +36,19 @@ trait LimitColumns
             $this->fillable
         );
 
+        // Include the updated_at and created_at columns in
+        // the select statement if the property is
+        // specified.
+        if(
+            property_exists($this, 'limitWithTimestamps') &&
+            $this->limitWithTimestamps === true
+        ) {
+            $columns = array_merge($columns, [
+                $this->getQualifiedCreatedAtColumn(),
+                $this->getQualifiedUpdatedAtColumn(),
+            ]);
+        }
+
         return array_unique($columns);
     }
 
