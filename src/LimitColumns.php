@@ -47,6 +47,10 @@ trait LimitColumns
                 $this->getQualifiedCreatedAtColumn(),
                 $this->getQualifiedUpdatedAtColumn(),
             ]);
+
+            if(method_exists($this, 'getQualifiedDeletedAtColumn')) {
+                $columns = array_merge($columns, [$this->getQualifiedDeletedAtColumn()]);
+            }
         }
 
         return array_unique($columns);
